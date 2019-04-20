@@ -1,0 +1,38 @@
+Automatic-Module-Name: net.sourceforge.usbdm.cw.debugPlugin
+Manifest-Version: 1.0
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Bundle-Name: USBDM Debugger Plugin
+Bundle-Vendor: USBDM
+Bundle-Activator: net.sourceforge.usbdm.connections.usbdm.Activator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: net.sourceforge.usbdm.cw.debugPlugin;singleton:=true
+Bundle-Version: 5.0.0.qualifier
+Bundle-Localization: plugin
+Require-Bundle: net.sourceforge.usbdm.jni;bundle-version="5.0.0",
+ org.eclipse.swt,
+ com.freescale.core.debugger.ui.cdt,
+ com.freescale.mcu.debug.connections,
+ com.freescale.mcu.debugger.cdt,
+ org.eclipse.debug.core
+Bundle-RequiredExecutionEnvironment: 
+ JavaSE-1.6
+Export-Package: 
+ net.sourceforge.usbdm.connections.usbdm;
+  uses:="org.eclipse.debug.core,
+   net.sourceforge.usbdm.jni,
+   org.eclipse.jface.resource,
+   org.eclipse.swt.events,
+   org.eclipse.ui.plugin,
+   org.osgi.framework,
+   org.eclipse.swt.widgets,
+   com.freescale.cdt.debug.cw.mcu.common.publicintf,
+   com.freescale.cdt.debug.cw.core.ui.publicintf,
+   org.eclipse.ui.forms.widgets",
+ tests.internal;x-internal:=true
+Import-Package: org.eclipse.core.runtime,
+ org.eclipse.jface.action,
+ org.eclipse.jface.window,
+ org.eclipse.ui.forms.widgets,
+ org.eclipse.ui.plugin,
+ org.osgi.framework
