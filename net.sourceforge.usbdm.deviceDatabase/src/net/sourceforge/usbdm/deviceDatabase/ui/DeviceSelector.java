@@ -1,11 +1,10 @@
 package net.sourceforge.usbdm.deviceDatabase.ui;
 
-import org.eclipse.jface.dialogs.TitleAreaDialog;
-
 import net.sourceforge.usbdm.deviceDatabase.Device;
 import net.sourceforge.usbdm.jni.Usbdm.TargetType;
 
 import org.eclipse.jface.dialogs.IDialogConstants;
+import org.eclipse.jface.dialogs.TitleAreaDialog;
 import org.eclipse.jface.layout.GridDataFactory;
 import org.eclipse.jface.window.Window;
 import org.eclipse.swt.SWT;
